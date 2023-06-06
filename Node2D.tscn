@@ -1,9 +1,13 @@
-[gd_scene format=2]
+[gd_scene format=3 uid="uid://db57fihvy6uxo"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 534.0
-margin_top = 804.0
-margin_right = 1470.0
-margin_bottom = 1592.0
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Node2D"]
+offset_left = 1076.0
+offset_top = 646.0
+offset_right = 2260.0
+offset_bottom = 1433.0
