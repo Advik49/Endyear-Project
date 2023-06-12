@@ -1,0 +1,78 @@
+[gd_scene load_steps=7 format=3 uid="uid://c8tpnu3w1h18o"]
+
+[ext_resource type="Script" path="res://Intro.gd" id="1_vfgpn"]
+[ext_resource type="Texture2D" uid="uid://dxr2fbtdalfyt" path="res://endyearintroscreen.png" id="2_oex7q"]
+
+[sub_resource type="Animation" id="Animation_aq3r4"]
+resource_name = "FadeIn"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_5rk8j"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ji0hn"]
+resource_name = "FadeOut"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_oxgr1"]
+_data = {
+"FadeIn": SubResource("Animation_aq3r4"),
+"FadeOut": SubResource("Animation_ji0hn"),
+"RESET": SubResource("Animation_5rk8j")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_vfgpn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575.5, 333)
+scale = Vector2(1.82344, 1.39184)
+texture = ExtResource("2_oex7q")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -114.0
+offset_top = -44.0
+offset_right = 1289.0
+offset_bottom = 743.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_oxgr1")
+}

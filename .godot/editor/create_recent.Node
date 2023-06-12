@@ -1,2 +1,16 @@
+Camera3D
+CollisionShape3D
+MeshInstance3D
+CharacterBody3D
+Button
+LineEdit
+Label
+VBoxContainer
+MarginContainer
+PanelContainer
+CanvasLayer
+AnimationPlayer
 ColorRect
+Sprite2D
 Node2D
+Node
