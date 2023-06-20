@@ -4,7 +4,7 @@ signal health_changed(health_value)
 
 @onready var camera = $Camera3D
 @onready var anim_player = $AnimationPlayer
-@onready var muzzle_flash = $Camera3D/Pistol/MuzzleFlash
+@onready var muzzle_flash = $Camera3D/pistol/MuzzleFlash
 @onready var raycast = $Camera3D/RayCast3D
 
 var health = 3

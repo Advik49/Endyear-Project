@@ -1,6 +1,6 @@
-res://environment.tscn
-res://World.tscn
 res://Intro.tscn
+res://World.tscn
+res://environment.tscn
 res://player.tscn
-res://Player.gd
 res://World.gd
+res://Player.gd

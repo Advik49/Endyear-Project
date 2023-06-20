@@ -2,13 +2,14 @@ ProgressBar
 Control
 RayCast3D
 TextureRect
+MeshInstance3D
+CollisionShape3D
+RigidBody3D
 MultiplayerSynchronizer
 MultiplayerSpawner
 GPUParticles3D
 AnimationPlayer
 Camera3D
-CollisionShape3D
-MeshInstance3D
 CharacterBody3D
 Button
 LineEdit
