@@ -1,5 +1,11 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1686237424
+::res://::1686668097
 default_env.tres::Environment::-1::1685978932::0::1::::<><>::
 endyearintroscreen.png::CompressedTexture2D::8810348246358662479::1686237424::1686237424::1::::<><>::
 icon.png::CompressedTexture2D::5211409902437650872::1685978799::1686236379::1::::<><>::
+Intro.gd::GDScript::-1::1686581679::0::1::::<>Node2D<>::
+Intro.tscn::PackedScene::7129231449736824048::1686584406::0::1::::<><>::res://Intro.gd<>uid://dxr2fbtdalfyt
+Player.gd::GDScript::-1::1686583989::0::1::::<>CharacterBody3D<>::
+player.tscn::PackedScene::8149296044033082121::1686584406::0::1::::<><>::res://Player.gd
+World.gd::GDScript::-1::1686584187::0::1::::<>Node<>::
+World.tscn::PackedScene::9032666901130528275::1686584406::0::1::::<><>::res://World.gd

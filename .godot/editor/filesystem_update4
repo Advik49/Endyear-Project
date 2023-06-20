@@ -1,6 +1,3 @@
-res://Intro.gd
 res://Intro.tscn
 res://World.tscn
-res://Player.gd
 res://World.gd
-res://player.tscn
