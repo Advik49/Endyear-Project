@@ -1,3 +1,11 @@
+ProgressBar
+Control
+RayCast3D
+TextureRect
+MultiplayerSynchronizer
+MultiplayerSpawner
+GPUParticles3D
+AnimationPlayer
 Camera3D
 CollisionShape3D
 MeshInstance3D
@@ -9,7 +17,6 @@ VBoxContainer
 MarginContainer
 PanelContainer
 CanvasLayer
-AnimationPlayer
 ColorRect
 Sprite2D
 Node2D
